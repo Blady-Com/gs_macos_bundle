@@ -68,7 +68,7 @@
     <key>CFBundleExecutable</key>
     <string>gnatstudio_launcher</string>
     <key>CFBundleGetInfoString</key>
-    <string>25.0wa</string>
+    <string>26.0wa</string>
     <key>CFBundleIconFile</key>
     <string>gnatstudio.icns</string>
     <key>CFBundleIdentifier</key>
@@ -78,13 +78,13 @@
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
-    <string>25.0wa</string>
+    <string>26.0wa</string>
     <key>CFBundleSignature</key>
     <string>ADAC</string>
     <key>CFBundleVersion</key>
-    <string>25.0wa</string>
+    <string>26.0wa</string>
     <key>NSHumanReadableCopyright</key>
-    <string>Copyright 2024, AdaCore.</string>
+    <string>Copyright 2025, AdaCore.</string>
     <key>LSMinimumSystemVersion</key>
     <string>12.0</string>
     <key>NSHighResolutionCapable</key>

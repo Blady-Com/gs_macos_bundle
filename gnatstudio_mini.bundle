@@ -18,7 +18,7 @@
          app. If you leave out the path, the current directory is
          used. Note the usage of an environment variable here again.
     -->
-    <destination overwrite="yes">${project}/_build/Applications</destination>
+    <destination>${project}/../_build/Applications</destination>
 
     <image>
       <!-- Not implemented yet (DMG image). -->
@@ -50,15 +50,18 @@
   -->
   <plist>${project}/Info-gnatstudio.plist</plist>
 
+<!-- GNAT Studio -->
   <main-binary>${prefix}/bin/gnatstudio</main-binary>
-
-<!-- GNAT exe. 
+ 
+<!-- GNAT exe. -->
   <binary dest="${bundle}/Contents/MacOS/gnatstudio_cli">
     ${prefix}/bin/gnatstudio_cli
   </binary>
   <binary dest="${bundle}/Contents/MacOS/gnatdoc">
-    ${prefix}/bin/gnatdoc
+    ${prefix}/bin/gnatdoc3
   </binary>
--->
+  <binary dest="${bundle}/Contents/MacOS/gnatformat">
+    ${prefix}/bin/gnatformat
+  </binary>
 
   </app-bundle>

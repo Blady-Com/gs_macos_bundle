@@ -18,7 +18,7 @@
          app. If you leave out the path, the current directory is
          used. Note the usage of an environment variable here again.
     -->
-    <destination overwrite="yes">${project}/_build/Applications</destination>
+    <destination overwrite="yes">${project}/../_build/Applications</destination>
 
     <image>
       <!-- Not implemented yet (DMG image). -->
@@ -71,7 +71,7 @@
 
 <!-- Python libs. -->
   <binary recurse="True">
-    ${prefix}/lib/python3.11/*.so
+    ${prefix}/lib/python3.13/*.so
   </binary>
 
 <!-- GNAT exe. -->
@@ -79,7 +79,7 @@
     ${prefix}/bin/gnatstudio_cli
   </binary>
   <binary dest="${bundle}/Contents/MacOS/gnatdoc">
-    ${prefix}/bin/gnatdoc
+    ${prefix}/bin/gnatdoc3
   </binary>
   <binary dest="${bundle}/Contents/MacOS/gnatinspect">
     ${prefix}/bin/gnatinspect
@@ -89,6 +89,9 @@
   </binary>
   <binary dest="${bundle}/Contents/MacOS/gnatpp">
     ${prefix}/bin/gnatpp
+  </binary>
+  <binary dest="${bundle}/Contents/MacOS/gnatformat">
+    ${prefix}/bin/gnatformat
   </binary>
   <binary dest="${bundle}/Contents/MacOS/gnatstub">
     ${prefix}/bin/gnatstub
@@ -142,7 +145,7 @@
   </data>
 
   <data recurse="True">
-    ${prefix}/lib/python3.11/*.py
+    ${prefix}/lib/python3.13/*.py
   </data>
 
   <!-- Copy icons. Note that the .icns file is an Apple format which
