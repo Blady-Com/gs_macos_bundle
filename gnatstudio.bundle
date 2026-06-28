@@ -96,9 +96,6 @@
   <binary dest="${bundle}/Contents/MacOS/gnatstub">
     ${prefix}/bin/gnatstub
   </binary>
-  <binary dest="${bundle}/Contents/MacOS/gnattest">
-    ${prefix}/bin/gnattest
-  </binary>
   <binary dest="${bundle}/Contents/MacOS/ada_language_server">
     ${prefix}/bin/ada_language_server
   </binary>
